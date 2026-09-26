@@ -1,0 +1,90 @@
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #31103f 100%);
+            --panel-bg: rgba(30, 41, 59, 0.7);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-main);
+            min-height: 100vh;
+        }
+
+        .dashboard-container {
+            max-width: 900px;
+        }
+
+        /* Content Panel (Glassmorphic) */
+        .content-panel {
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 1rem;
+            backdrop-filter: blur(16px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Detail Labels & Values */
+        .detail-label {
+            color: var(--text-muted);
+            font-size: 0.8125rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+            margin-bottom: 0.35rem;
+        }
+
+        .detail-value {
+            color: var(--text-main);
+        }
+
+        /* Back Button Style */
+        .btn-custom-back {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            font-weight: 500;
+            padding: 0.55rem 1.25rem;
+            border-radius: 0.5rem;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        .btn-custom-back:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border-color: rgba(99, 102, 241, 0.3);
+            transform: translateY(-1px);
+        }
+
+        /* Badges */
+        .badge-custom {
+            padding: 0.35em 0.75em;
+            font-weight: 500;
+            font-size: 0.75rem;
+            border-radius: 30px;
+        }
+        .badge-completed {
+            background-color: rgba(52, 211, 153, 0.15);
+            color: #34d399;
+            border: 1px solid rgba(52, 211, 153, 0.2);
+        }
+        .badge-pending {
+            background-color: rgba(251, 191, 36, 0.15);
+            color: #fbbf24;
+            border: 1px solid rgba(251, 191, 36, 0.2);
+        }
+
+        /* Buttons */
+        .btn-light {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-color: var(--border-color) !important;
+            color: var(--text-main) !important;
+        }
+        .btn-light:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff !important;
+        }
